@@ -1,19 +1,40 @@
-Problem Description
+# 🛒 Problem Description
 
-This project uses a public Mercado Libre dataset containing 100,000 product listings in JSON Lines format. Each record includes multiple attributes about a marketplace item: its title, description, category, seller information, price, shipping features, and other metadata.
+This project uses a **public Mercado Libre dataset** containing **100,000 product listings** in **JSON Lines** format. Each record includes multiple attributes about a marketplace item: its title, description, category, seller information, price, shipping features, and other metadata.
 
-A key challenge in the dataset is the inconsistent and often missing classification of product condition. Many listings do not clearly specify whether the item being sold is new or used, and the available textual fields are noisy, unstructured, and difficult to analyze manually. This lack of reliable labeling limits the ability to study market dynamics, compare price distributions, or improve product recommendation systems.
+## ⚠️ Problem Context
 
-To address this issue, the goal of the project is to build a machine learning model capable of predicting whether a product listing corresponds to a new or used item based on the attributes available in the dataset. The dataset includes a variable that labels a subset of listings as “new” or “used”, created through internal tagging, and this serves as the ground truth for supervised learning.
+A key challenge in the dataset is the **inconsistent or missing classification of product condition**. Many listings do not clearly specify whether the item being sold is **new** or **used**, and the available textual fields are often noisy, unstructured, and difficult to analyze manually.
 
-By analyzing the structured and unstructured fields of each listing, the project aims to:
+This lack of reliable labeling limits the ability to:
 
-Understand which features help distinguish new products from used ones
+- Study market dynamics  
+- Compare price distributions  
+- Improve product recommendation systems  
+- Understand buyer/seller behavior  
 
-Build a classification model that can generalize to unlabeled listings
+## 🎯 Project Objective
 
-Improve the characterization of marketplace items
+The goal of this project is to **build a machine learning classifier** capable of predicting whether a product listing corresponds to a **new** or **used** item based on the attributes available in the dataset.
 
-Provide a tool that can support sellers, buyers, and automated systems in estimating item condition
+The dataset includes a variable created through internal tagging that labels a subset of listings as “new” or “used”. This serves as the **ground truth** for supervised learning.
 
-This project includes exploratory data analysis (EDA), feature engineering, model development, and model evaluation. The final outcome is a classifier that predicts whether a product listing is new or used based on its available metadata.# midterm_project
+## 🔍 What the Project Aims to Achieve
+
+By analyzing the structured and unstructured fields of each listing, this project aims to:
+
+- 🧩 **Identify which features best distinguish new products from used ones**  
+- 🤖 **Train a classification model** that can generalize to unlabeled listings  
+- 🏷️ **Improve the characterization of marketplace items**  
+- ⚙️ **Provide a tool that supports sellers, buyers, and automated systems** in estimating product condition  
+
+## 📊 Scope of Work
+
+The project includes:
+
+- Exploratory Data Analysis (EDA)  
+- Feature engineering  
+- Model development  
+- Model evaluation  
+
+The final outcome is a **classifier** capable of predicting whether a product listing is **new or used** using only the metadata provided in the dataset.
